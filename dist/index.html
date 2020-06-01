@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  
+    <header>
+      <section class="hero is-light is-medium" id="navBar">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+                  <h1 class="title">Christian R.</h1>
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a  href="#projects" class="navbar-item is-active">
+                    Projects
+                  </a>
+                  <a href="#skills" class="navbar-item">
+                    Skills
+                  </a>
+                  <a href="#contact" class="navbar-item">
+                    Contact Me
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body columns is-variable is-2">
+          <div class="container is-half" id="picture">
+            <figure class="image is-pulled-right">
+              <img class="is-rounded" src="https://www.dropbox.com/s/j5s6x3r5yani4h9/profilePic.jpg?raw=1">
+            </figure>
+          </div>
+          <div class="container has-text-left">
+            <h1 class="title">
+              I'm Christian R.
+            </h1>
+              <h2 class="subtitle">
+                a fullstack web developer with the mission to deliver professional and functional web applications.
+            </h2>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="tile is-ancestor" id="skills" id="skills">
+        <div class="tile is-parent flip-card">
+          <div class="flip-card-inner">
+
+            <div class="tile is-child box flip-card-front">
+              <p class="title">More About Christian R.</p>
+            </div>
+            <div class="tile is-child box flip-card-back">
+              <p class="title">Christian R. Info</p>
+              <p>
+                Location: "Tijuana B.C. México"
+              </p>
+              <p>Resume: <a href="https://docs.google.com/document/d/1BfN-8SYZopvhxWsO42PRFYZEkrJOxP0FCRi3Mn9L17Y/edit?usp=sharing"
+                target="_blank" rel="noopener noreferrer"
+                >Here</a> </p>
+              <p>Interests: Coding, Cooking, Teaching, Video Games, Travel</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-8 is-vertical is-parent">
+          <div class="tile is-child box notification is-dark">
+            <p class="title">Front-End</p>
+            <p>Vue Js, React Js, CSS, SASS, HTML, Bulma CSS, Bootstrap CSS</p>
+          </div>
+          <div class="tile is-child box">
+            <p class="title">Back-End</p>
+            <p>Python, Ruby, PHP, JavaScript ES6, Node JS, Django, Rails, Laravel</p>
+          </div>
+        </div>     
+      </div>
+
+      <div class="tile is-ancestor" id="projects">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">SocietalBook</p>
+            <p class="subtitle">
+              This is A Facebook-Like Social Network Application. 
+              Features – Users, Profiles, “Friending”, Posts, Newsfeed, And Likes. </br> 
+              (Ruby On Rails + Bulma CSS + Heroku)</p>
+            <hr>
+            <div class="center">
+              
+              <a href="https://github.com/geraldgsh/societalbook" target="_blank" rel="noopener noreferrer">
+  
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://societalbook.herokuapp.com/" target="_blank" rel="noopener noreferrer" >
+  
+                <i class="fa fa-link fa-2x" aria-hidden="true" ></i>
+              </a>
+            </div>
+          
+          </article>
+        </div>
+        <div class="tile is-parent is-8">
+          <article class="tile is-child box">
+            <div class="content">
+              <figure class="image">
+                <img src="./img/project_1.png">
+              </figure>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Vue JS Stock Trader</p>
+            <p class="subtitle">This is a Stock Trader Like Application. <br>
+              Features – Buy Stocks, Sell Stocks and Save and Load. <br> 
+              (Vue JS + Vuex + Firebase)
+            </p>
+            <hr>
+            <div class="content center">
+              <a href="https://github.com/jcromerohdz/Stock-Trader-App" target="_blank" rel="noopener noreferrer">
+  
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://optimistic-almeida-a00e3b.netlify.app" target="_blank" rel="noopener noreferrer" >
+  
+                <i class="fa fa-link fa-2x" aria-hidden="true" ></i>
+              </a>
+ 
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent is-8">
+          <article class="tile is-child box">
+            <div class="content">
+              <figure class="image">
+                <img src="./img/project_2.png">
+              </figure>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">React Calculator</p>
+            <p class="subtitle">This is React Js Calculator Applicatons. <br>
+            Features – Addition, Substration, Multiplication, Division, Percentage. <br>
+            (React JS + CSS + Heroku)
+            </p>
+            <hr>
+            <div class="content center">
+              <a href="https://github.com/jcromerohdz/Magicians-calc" target="_blank" rel="noopener noreferrer">
+  
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://magicianscalc.herokuapp.com/" target="_blank" rel="noopener noreferrer" >
+  
+                <i class="fa fa-link fa-2x" aria-hidden="true" ></i>
+              </a>
+              
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent is-8">
+          <article class="tile is-child box"> 
+            <div class="content">
+              <figure class="image">
+                <img src="./img/project_3.png">
+              </figure>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">JavaScript Tic Tac Toe</p>
+            <p class="subtitle">This is a JavaScript JS Tic Tac Toe Game. <br>
+            Feature - Player turns, Winning, Draws. <br>
+            (JavaSctipt, HTML 5, CSS, Bootstrap 4 CSS)            
+          </p>
+          <hr>
+            <div class="content center">
+              <a href="https://github.com/jcromerohdz/js-tic-tac-toe" target="_blank" rel="noopener noreferrer">
+  
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://raw.githack.com/jcromerohdz/js-tic-tac-toe/ticTacToe/index.html" target="_blank" rel="noopener noreferrer" >
+  
+                <i class="fa fa-link fa-2x" aria-hidden="true" ></i>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent is-8">
+          <article class="tile is-child box"> 
+            <div class="content">
+              <figure class="image">
+                <img src="./img/project_4_1.png">
+              </figure>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Newsweek Clone</p>
+            <p class="subtitle">This a Newsweek Clone site. <br>
+            Features - Responsive design for different screen sizes. <br>
+            (HTML5, CSS, Bootstrap 4 CSS)
+            </p>
+            <hr>
+            <div class="content center">
+             <a href="https://github.com/jcromerohdz/js-tic-tac-toe" target="_blank" rel="noopener noreferrer">
+  
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://raw.githack.com/jcromerohdz/js-tic-tac-toe/ticTacToe/index.html" target="_blank" rel="noopener noreferrer" >
+  
+                <i class="fa fa-link fa-2x" aria-hidden="true" ></i>
+              </a>
+              
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent is-8">
+          <article class="tile is-child box"> 
+            <div class="content">
+              <figure class="image">
+                <img src="./img/project_5.png">
+              </figure>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <section class="hero is-center-items">
+        <div class="hero-body">
+          <div class="container is-center-items">
+            <a href="mailto:jcromerohdz@gmail.com" target="_blank" rel="noopener noreferrer" >
+            
+              <i class="fas fa-envelope fa-3x is-pd-10" ></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christian-romero-5bb378ba/" target="_blank" rel="noopener noreferrer" >
+            
+              <i class="fab fa-linkedin fa-3x is-pd-10"></i>
+            </a>
+            <a href="https://twitter.com/jcromerohdz" target="_blank" rel="noopener noreferrer" >
+            
+              <i class="fab fa-twitter fa-3x is-pd-10"></i>
+            </a>
+            <a href="https://github.com/jcromerohdz" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+
+          </div>
+          
+        </div>
+      </section>
+    </footer>
+
+ 
+</body>
+</html> 
