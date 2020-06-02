@@ -14,7 +14,7 @@
     <header>
       <section class="hero is-light is-medium" id="navBar">
         <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
+        <div class="hero-head is-fluid">
           <nav class="navbar">
             <div class="container">
               <div class="navbar-brand">
@@ -30,7 +30,7 @@
               </div>
               <div id="navbarMenuHeroA" class="navbar-menu">
                 <div class="navbar-end">
-                  <a  href="#projects" class="navbar-item is-active">
+                  <a  href="#projects" class="navbar-item">
                     Projects
                   </a>
                   <a href="#skills" class="navbar-item">
@@ -48,7 +48,7 @@
         <!-- Hero content: will be in the middle -->
         <div class="hero-body columns is-variable is-2">
           <div class="container is-half" id="picture">
-            <figure class="image is-pulled-right">
+            <figure class="image is-pulled-right" id="myPic">
               <img class="is-rounded" src="https://www.dropbox.com/s/j5s6x3r5yani4h9/profilePic.jpg?raw=1">
             </figure>
           </div>
@@ -63,6 +63,8 @@
         </div>
       </section>
     </header>
+
+    
     <main>
       <div class="tile is-ancestor" id="skills" id="skills">
         <div class="tile is-parent flip-card">
@@ -73,24 +75,24 @@
             </div>
             <div class="tile is-child box flip-card-back">
               <p class="title">Christian Romero. Info</p>
-              <p>
-                Location: "Tijuana B.C. México"
-              </p>
-              <p>Resume: <a href="https://docs.google.com/document/d/1BfN-8SYZopvhxWsO42PRFYZEkrJOxP0FCRi3Mn9L17Y/edit?usp=sharing"
+              <p class="subtitle">
+                Location: "Tijuana B.C. México"<br>
+                Resume: <a href="https://docs.google.com/document/d/1BfN-8SYZopvhxWsO42PRFYZEkrJOxP0FCRi3Mn9L17Y/edit?usp=sharing"
                 target="_blank" rel="noopener noreferrer"
-                >Here</a> </p>
-              <p>Interests: Coding, Cooking, Teaching, Video Games, Travel</p>
+                >Here</a><br>
+                Interests: Coding, Cooking, Teaching, Video Games, Travel
+              </p>
             </div>
           </div>
         </div>
         <div class="tile is-8 is-vertical is-parent">
           <div class="tile is-child box notification is-dark">
             <p class="title">Front-End</p>
-            <p>Vue Js, React Js, CSS, SASS, HTML, Bulma CSS, Bootstrap CSS</p>
+            <p class="subtitle">JavaScript ES6, Vue Js, React Js, CSS, SASS, HTML, Bulma CSS, Bootstrap CSS</p>
           </div>
           <div class="tile is-child box">
             <p class="title">Back-End</p>
-            <p>Python, Ruby, PHP, JavaScript ES6, Node JS, Django, Rails, Laravel</p>
+            <p class="subtitle">Python, Ruby, PHP, JavaScript ES6, Node JS, Django, Rails, Laravel</p>
           </div>
         </div>     
       </div>
@@ -100,7 +102,7 @@
           <article class="tile is-child box">
             <p class="title">SocietalBook</p>
             <p class="subtitle">
-              This is A Facebook-Like Social Network Application. 
+              This is A Facebook-Like Social Network Application.<br> 
               Features – Users, Profiles, “Friending”, Posts, Newsfeed, And Likes. </br> 
               (Ruby On Rails + Bulma CSS + Heroku)</p>
             <hr>
@@ -290,7 +292,33 @@
         </div>
       </section>
     </footer>
-
  
+ <script>
+   document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+ </script>
 </body>
 </html> 
